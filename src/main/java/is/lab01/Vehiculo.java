@@ -1,4 +1,4 @@
-
+package is.lab01;
 public class Vehiculo {
     double  cantidad;
     double capacidad;

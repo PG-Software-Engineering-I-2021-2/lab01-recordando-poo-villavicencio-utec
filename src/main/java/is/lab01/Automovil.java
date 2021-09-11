@@ -1,3 +1,5 @@
+package is.lab01;
+
 public class Automovil extends Vehiculo{
     public Automovil( double  cantidad,
                    double capacidad,

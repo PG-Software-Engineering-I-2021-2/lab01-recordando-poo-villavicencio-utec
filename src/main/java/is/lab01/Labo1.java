@@ -1,3 +1,4 @@
+package is.lab01;
 
 import java.util.logging.Logger;
 import java.lang.*;
