@@ -5,22 +5,22 @@ public class Vehiculo {
     double consumo;
     double viaje;
 
-    Vehiculo(double _cantidad, double _consumo, double _capacidad){
-        this.cantidad = _cantidad;
-        this.consumo = _consumo;
-        this.capacidad = _capacidad;
+    Vehiculo(double prCantidad, double prConsumo, double prCapacidad){
+        this.cantidad = prCantidad;
+        this.consumo = prConsumo;
+        this.capacidad = prCapacidad;
     }
-    String  abastecer(double _litros){
+    String  abastecer(double prLitros){
         return "";
     }
-    String consumoCombustible(double _km){
-        double fuelRequiere = _km*this.consumo;
+    String consumoCombustible(double prkm){
+        double fuelRequiere = prkm*this.consumo;
         if(cantidad-fuelRequiere<0){
             return ("Vehiculo necesita reabastecimiento de combustible");
         }
         else{
             this.cantidad -=fuelRequiere;
-            return ("Vehiculo viajó " +(_km)+" km y aún tiene " +String.format("%.2f",cantidad,2)+ " de combustible");
+            return ("Vehiculo viajó " +(prkm)+" km y aún tiene " +String.format("%.2f",cantidad,2)+ " de combustible");
         }
     }
 }

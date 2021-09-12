@@ -13,15 +13,19 @@ public class Labo1 {
 
 //Ejemplo 1
         Automovil lAutomovil1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
-        logger.info(lAutomovil1.consumoCombustible(4));
+
+        String rpta1 = lAutomovil1.consumoCombustible(4);
+        logger.info(rpta1);
 
 //Ejemplo 2
         Automovil lAutomovil2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
-        logger.info(lAutomovil2.consumoCombustible(12));
+        String rpta2 = lAutomovil2.consumoCombustible(12);
+        logger.info(rpta2);
 
 //Ejemplo 3
         Camion lCamion = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
-        logger.info(lCamion.consumoCombustible(4));
+        String rpta3 = lCamion.consumoCombustible(4);
+        logger.info(rpta3);
 
     }
 }

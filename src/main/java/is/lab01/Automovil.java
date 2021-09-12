@@ -2,15 +2,15 @@ package is.lab01;
 
 public class Automovil extends Vehiculo{
 
-    Automovil(double _cantidad, double _consumo, double _capacidad) {
-        super(_cantidad, _consumo, _capacidad);
+    Automovil(double prCantidad, double prConsumo, double prCapacidad) {
+        super(prCantidad, prConsumo, prCapacidad);
     }
 
     @Override
-    String  abastecer(double _cantidad) {
+    String  abastecer(double prCantidad) {
         double freeSpace = this.capacidad - this.cantidad;
 
-        if (_cantidad > freeSpace)
+        if (prCantidad > freeSpace)
         {
             return "Automovil no se puede reabastecer el tanque, esta lleno";
 

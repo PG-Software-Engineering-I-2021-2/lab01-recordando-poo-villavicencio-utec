@@ -1,9 +1,22 @@
 
-'is.lab01.Vehiculo#consumoCombustible()Dç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java   (%"1*Æ
-1ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java! !("ò
-ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java! !(
-""B
-is.lab01.Vehiculo
+.is.lab01.Camion#abastecer(D)Ljava/lang/String;ã
+Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java ("2"1*‹
+2ã
+Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (I"»
+ã
+Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (J86
+4Camion no se puede reabastecer el tanque, esta lleno*™
+1ã
+Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (Î
+Ë
+ã
+Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (H
+%0java.lang.String"__concat*.,
+*La cantidad de combustible del camion es: *
+"""®
+ã
+Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (I
+
+%0java.lang.String:
+""B
+is.lab01.Camion
