@@ -15,25 +15,29 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()Iî
-Vehiculojava.lang.Object*
-setCantidad(D)Vehiculo#setCantidad(D)V$
-setViaje(D)Vehiculo#setViaje(D)V&
-abastecer(I)Vehiculo#abastecer(I)V
-<init>()Vehiculo#<init>()V"
+hashCode()java.lang.Object#hashCode()IÓ
+is.lab01.Vehiculojava.lang.Object3
+setCantidad(D)!is.lab01.Vehiculo#setCantidad(D)V-
+setViaje(D)is.lab01.Vehiculo#setViaje(D)V/
+abastecer(I)is.lab01.Vehiculo#abastecer(I)V'
+<init>()is.lab01.Vehiculo#<init>()V+
 
-getViaje()Vehiculo#getViaje()D(
-setConsumo(D)Vehiculo#setConsumo(D)V6
-consumoCombustible()Vehiculo#consumoCombustible()D(
-getCantidad()Vehiculo#getCantidad()D,
-setCapacidad(D)Vehiculo#setCapacidad(D)V†
-	AutomovilVehiculo'
-abastecer(I)Automovil#abastecer(I)V'
-<init>(DDDD)Automovil#<init>(DDDD)V7
-consumoCombustible()Automovil#consumoCombustible()Du
-Labo1java.lang.Object
-<init>()Labo1#<init>()V=
-main([Ljava/lang/String;) Labo1#main([Ljava/lang/String;)V(
+getViaje()is.lab01.Vehiculo#getViaje()D1
+setConsumo(D) is.lab01.Vehiculo#setConsumo(D)V?
+consumoCombustible()'is.lab01.Vehiculo#consumoCombustible()D1
+getCantidad() is.lab01.Vehiculo#getCantidad()D5
+setCapacidad(D)"is.lab01.Vehiculo#setCapacidad(D)VÕ
+is.lab01.Automovilis.lab01.Vehiculo0
+abastecer(I) is.lab01.Automovil#abastecer(I)V0
+<init>(DDDD) is.lab01.Automovil#<init>(DDDD)V@
+consumoCombustible()(is.lab01.Automovil#consumoCombustible()D¡
+is.lab01.Camionis.lab01.Vehiculo-
+abastecer(I)is.lab01.Camion#abastecer(I)V-
+<init>(DDDD)is.lab01.Camion#<init>(DDDD)V=
+consumoCombustible()%is.lab01.Camion#consumoCombustible()Dê
+is.lab01.Labo1java.lang.Object$
+<init>()is.lab01.Labo1#<init>()VF
+main([Ljava/lang/String;))is.lab01.Labo1#main([Ljava/lang/String;)V(
 java.io.Serializablejava.lang.Object'
 java.lang.Cloneablejava.lang.Objectï
 java.text.Formatjava.lang.Cloneablejava.lang.Objectjava.io.Serializable”
@@ -355,8 +359,4 @@ ulogp(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Th
 @entering(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Zjava.util.logging.Logger#entering(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)VN
 info(Ljava/lang/String;)2java.util.logging.Logger#info(Ljava/lang/String;)Vx
 -exiting(Ljava/lang/String;Ljava/lang/String;)Gjava.util.logging.Logger#exiting(Ljava/lang/String;Ljava/lang/String;)V®
-Elog(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)_java.util.logging.Logger#log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)Vî
-CamionVehiculo$
-abastecer(I)Camion#abastecer(I)V$
-<init>(DDDD)Camion#<init>(DDDD)V4
-consumoCombustible()Camion#consumoCombustible()D
+Elog(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)_java.util.logging.Logger#log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V

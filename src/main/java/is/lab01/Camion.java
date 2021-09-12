@@ -1,21 +1,31 @@
 package is.lab01;
 
 public class Camion  extends Vehiculo{
-    public Camion( double  cantidad,
-            double capacidad,
-            double consumo,
-            double viaje) {
-        this.setCantidad(cantidad);
-        this.setCapacidad(capacidad);
-        this.setConsumo(consumo);
-        this.setViaje(viaje);
+    Camion(double _cantidad, double _consumo, double _capacidad) {
+        super(_cantidad, _consumo, _capacidad);
     }
 
-    public  double consumoCombustible(){
-        return this.getCantidad() - 1.6*this.getViaje();
+    String abastecer(double _liters){
+        double freeSpace = this.capacidad - this.cantidad;
+        if (_liters > freeSpace)
+        {
+            return "Camion no se puede reabastecer el tanque, esta lleno";
+
+        }
+        else{
+            this.cantidad += (_liters * 0.95);
+            return "La cantidad de combustible del camion es: "+cantidad;
+        }
     }
-    public void abastecer(int cantidad){
-        double newCantidad = cantidad*0.95;
-        this.setCantidad(this.getCantidad()+ newCantidad);
+    @Override
+    String consumoCombustible(double _km) {
+        double fuelRequiere = _km*this.consumo;
+        if(cantidad-fuelRequiere<0){
+            return "Camion necesita reabastecimiento de combustible";
+        }
+        else{
+            this.cantidad -=fuelRequiere;
+            return ("Camion viajó " +(_km)+" km y aún tiene " +String.format("%.2f",cantidad,2)+ " de combustible");
+        }
     }
 }

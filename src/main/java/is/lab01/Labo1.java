@@ -1,33 +1,27 @@
 package is.lab01;
-
 import java.util.logging.Logger;
-import java.lang.*;
-import java.text.DecimalFormat;
 
 public class Labo1 {
     static final Logger logger = Logger.getLogger(Labo1.class.getName());
+    static double consumoVehiculo = 0.9;
+    static double consumoCamion = 1.6;
+    static double capacidadTotal = 100;
     public static void main(String[ ] args) {
-        DecimalFormat df = new DecimalFormat("0.00");
+
+        double fuelCantidad =10;
+
+
 //Ejemplo 1
-        Automovil lAutomovil1 = new Automovil(10,100,0.9,4);
-        double lAutomovilConsumo1 =   Math.round(lAutomovil1.consumoCombustible()*100.0)/100.0;
-        logger.info("Vehiculo viajó "+ lAutomovil1.getViaje() +" y aún tiene "+ df.format(lAutomovilConsumo1)+ " de combustible");
+        Automovil lAutomovil1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+        logger.info(lAutomovil1.consumoCombustible(4));
 
 //Ejemplo 2
-        Automovil lAutomovil2 = new Automovil(10,100,0.9,12);
-
-        double lAutomovilConsumo2 = Math.round(lAutomovil2.consumoCombustible()*100.0)/100.0;
-        if(lAutomovilConsumo2>0)
-            logger.info("Vehiculo viajó "+ lAutomovil2.getViaje() +" y aún tiene "+ df.format(lAutomovilConsumo2)+ " de combustible");
-        else
-            logger.info("Vehiculo necesita reabastecemiento de combustible");
+        Automovil lAutomovil2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+        logger.info(lAutomovil2.consumoCombustible(12));
 
 //Ejemplo 3
-        Camion lCamion = new Camion(10,100,1.6,4);
-        double lCamionConsumo = Math.round(lCamion.consumoCombustible()*100.0)/100.0;
-
-
-        logger.info("Vehiculo viajó "+ lCamion.getViaje() +" y aún tiene "+ df.format(lCamionConsumo)+ " de combustible");
+        Camion lCamion = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
+        logger.info(lCamion.consumoCombustible(4));
 
     }
 }
