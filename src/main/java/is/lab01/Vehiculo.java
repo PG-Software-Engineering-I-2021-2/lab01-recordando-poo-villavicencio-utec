@@ -4,6 +4,7 @@ public class Vehiculo {
     double capacidad;
     double consumo;
     double viaje;
+    static final String defaultValue = "";
 
     Vehiculo(double prCantidad, double prConsumo, double prCapacidad){
         this.cantidad = prCantidad;
@@ -11,7 +12,7 @@ public class Vehiculo {
         this.capacidad = prCapacidad;
     }
     String  abastecer(double prLitros){
-        return "";
+        return defaultValue;
     }
     String consumoCombustible(double prkm){
         double fuelRequiere = prkm*this.consumo;

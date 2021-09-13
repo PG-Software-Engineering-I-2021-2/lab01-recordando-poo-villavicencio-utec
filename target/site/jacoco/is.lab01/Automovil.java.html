@@ -2,15 +2,15 @@
 
 public class Automovil extends Vehiculo{
 
-    Automovil(double _cantidad, double _consumo, double _capacidad) {
-<span class="fc" id="L6">        super(_cantidad, _consumo, _capacidad);</span>
+    Automovil(double prCantidad, double prConsumo, double prCapacidad) {
+<span class="fc" id="L6">        super(prCantidad, prConsumo, prCapacidad);</span>
 <span class="fc" id="L7">    }</span>
 
     @Override
-    String  abastecer(double _cantidad) {
+    String  abastecer(double prCantidad) {
 <span class="nc" id="L11">        double freeSpace = this.capacidad - this.cantidad;</span>
 
-<span class="nc bnc" id="L13" title="All 2 branches missed.">        if (_cantidad &gt; freeSpace)</span>
+<span class="nc bnc" id="L13" title="All 2 branches missed.">        if (prCantidad &gt; freeSpace)</span>
         {
 <span class="nc" id="L15">            return &quot;Automovil no se puede reabastecer el tanque, esta lleno&quot;;</span>
 

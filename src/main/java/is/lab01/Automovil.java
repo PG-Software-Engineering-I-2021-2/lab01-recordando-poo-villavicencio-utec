@@ -7,10 +7,10 @@ public class Automovil extends Vehiculo{
     }
 
     @Override
-    String  abastecer(double prCantidad) {
+    String  abastecer(double prLitros) {
         double freeSpace = this.capacidad - this.cantidad;
 
-        if (prCantidad > freeSpace)
+        if (prLitros > freeSpace)
         {
             return "Automovil no se puede reabastecer el tanque, esta lleno";
 
