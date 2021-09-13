@@ -4,28 +4,27 @@ public class Camion  extends Vehiculo{
     Camion(double prCantidad, double prConsumo, double prCapacidad) {
 <span class="nc" id="L5">        super(prCantidad, prConsumo, prCapacidad);</span>
 <span class="nc" id="L6">    }</span>
-    @Override
-    String abastecer(double prLitros){
-<span class="nc" id="L9">        double freeSpace = this.capacidad - this.cantidad;</span>
-<span class="nc bnc" id="L10" title="All 2 branches missed.">        if (prLitros &gt; freeSpace)</span>
+    String  abastecer(double prLitros){
+<span class="nc" id="L8">        double freeSpace = this.capacidad - this.cantidad;</span>
+<span class="nc bnc" id="L9" title="All 2 branches missed.">        if (prLitros &gt; freeSpace)</span>
         {
-<span class="nc" id="L12">            return &quot;Camion no se puede reabastecer el tanque, esta lleno&quot;;</span>
+<span class="nc" id="L11">            return &quot;Camion no se puede reabastecer el tanque, esta lleno&quot;;</span>
 
         }
         else{
-<span class="nc" id="L16">            this.cantidad += (prLitros * 0.95);</span>
-<span class="nc" id="L17">            return &quot;La cantidad de combustible del camion es: &quot;+cantidad;</span>
+<span class="nc" id="L15">            this.cantidad += (prLitros * 0.95);</span>
+<span class="nc" id="L16">            return &quot;La cantidad de combustible del camion es: &quot;+cantidad;</span>
         }
     }
     @Override
     String consumoCombustible(double prkm) {
-<span class="nc" id="L22">        double fuelRequiere = prkm*this.consumo;</span>
-<span class="nc bnc" id="L23" title="All 2 branches missed.">        if(cantidad-fuelRequiere&lt;0){</span>
-<span class="nc" id="L24">            return &quot;Camion necesita reabastecimiento de combustible&quot;;</span>
+<span class="nc" id="L21">        double fuelRequiere = prkm*this.consumo;</span>
+<span class="nc bnc" id="L22" title="All 2 branches missed.">        if(cantidad-fuelRequiere&lt;0){</span>
+<span class="nc" id="L23">            return &quot;Camion necesita reabastecimiento de combustible&quot;;</span>
         }
         else{
-<span class="nc" id="L27">            this.cantidad -=fuelRequiere;</span>
-<span class="nc" id="L28">            return (&quot;Camion viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidad,2)+ &quot; de combustible&quot;);</span>
+<span class="nc" id="L26">            this.cantidad -=fuelRequiere;</span>
+<span class="nc" id="L27">            return (&quot;Camion viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidad,2)+ &quot; de combustible&quot;);</span>
         }
     }
 }

@@ -6,18 +6,17 @@ public class Automovil extends Vehiculo{
 <span class="fc" id="L6">        super(prCantidad, prConsumo, prCapacidad);</span>
 <span class="fc" id="L7">    }</span>
 
-    @Override
     String  abastecer(double prLitros) {
-<span class="nc" id="L11">        double freeSpace = this.capacidad - this.cantidad;</span>
+<span class="nc" id="L10">        double freeSpace = this.capacidad - this.cantidad;</span>
 
-<span class="nc bnc" id="L13" title="All 2 branches missed.">        if (prLitros &gt; freeSpace)</span>
+<span class="nc bnc" id="L12" title="All 2 branches missed.">        if (prLitros &gt; freeSpace)</span>
         {
-<span class="nc" id="L15">            return &quot;Automovil no se puede reabastecer el tanque, esta lleno&quot;;</span>
+<span class="nc" id="L14">            return &quot;Automovil no se puede reabastecer el tanque, esta lleno&quot;;</span>
 
         }
         else{
-<span class="nc" id="L19">            cantidad += cantidad;</span>
-<span class="nc" id="L20">            return &quot;La cantidad de combustible del vehiculo es: &quot;+cantidad;</span>
+<span class="nc" id="L18">            cantidad += cantidad;</span>
+<span class="nc" id="L19">            return &quot;La cantidad de combustible del vehiculo es: &quot;+cantidad;</span>
         }
     }
 }

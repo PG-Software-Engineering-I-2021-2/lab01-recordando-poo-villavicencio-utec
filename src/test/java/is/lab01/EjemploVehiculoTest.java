@@ -11,6 +11,6 @@ public class EjemploVehiculoTest {
     public void Test01(){
         double fuelCantidad =10;
         Automovil automovilTest = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
-        Assert.assertEquals("Vehiculo necesita reabastecimiento de combustible", automovilTest.consumoCombustible(12));
+        Assert.assertEquals(automovilTest.consumoCombustible(12),"Vehiculo necesita reabastecimiento de combustible" );
     }
 }

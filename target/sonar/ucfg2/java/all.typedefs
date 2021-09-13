@@ -15,11 +15,10 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()Iê
+hashCode()java.lang.Object#hashCode()I¨
 is.lab01.Vehiculojava.lang.ObjectR
 consumoCombustible(D)9is.lab01.Vehiculo#consumoCombustible(D)Ljava/lang/String;-
-<init>(DDD)is.lab01.Vehiculo#<init>(DDD)V@
-abastecer(D)0is.lab01.Vehiculo#abastecer(D)Ljava/lang/String;(
+<init>(DDD)is.lab01.Vehiculo#<init>(DDD)V(
 java.io.Serializablejava.lang.Object(
 java.lang.Comparablejava.lang.Objectƒ
 java.lang.CharSequencejava.lang.Object.
