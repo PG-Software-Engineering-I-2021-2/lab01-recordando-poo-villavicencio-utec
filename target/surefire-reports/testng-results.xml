@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-11T19:49:41 PET" name="is.lab01.EjemploVehiculoTest" finished-at="2021-09-11T19:49:41 PET" duration-ms="186">
+  <suite started-at="2021-09-13T10:56:51 PET" name="is.lab01.EjemploVehiculoTest" finished-at="2021-09-13T10:56:51 PET" duration-ms="140">
     <groups>
     </groups>
-    <test started-at="2021-09-11T19:49:41 PET" name="Command line test" finished-at="2021-09-11T19:49:41 PET" duration-ms="186">
+    <test started-at="2021-09-13T10:56:51 PET" name="Command line test" finished-at="2021-09-13T10:56:51 PET" duration-ms="140">
       <class name="is.lab01.EjemploVehiculoTest">
-        <test-method signature="Test01()[pri:0, instance:is.lab01.EjemploVehiculoTest@41330d4f]" started-at="2021-09-11T19:49:41 PET" name="Test01" finished-at="2021-09-11T19:49:41 PET" duration-ms="59" status="PASS">
+        <test-method signature="Test01()[pri:0, instance:is.lab01.EjemploVehiculoTest@41330d4f]" started-at="2021-09-13T10:56:51 PET" name="Test01" finished-at="2021-09-13T10:56:51 PET" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test01 -->

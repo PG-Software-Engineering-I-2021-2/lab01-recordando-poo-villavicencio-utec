@@ -4,8 +4,7 @@ public class Camion  extends Vehiculo{
     Camion(double prCantidad, double prConsumo, double prCapacidad) {
         super(prCantidad, prConsumo, prCapacidad);
     }
-    @Override
-    String abastecer(double prLitros){
+    String  abastecer(double prLitros){
         double freeSpace = this.capacidad - this.cantidad;
         if (prLitros > freeSpace)
         {

@@ -6,7 +6,6 @@ public class Automovil extends Vehiculo{
         super(prCantidad, prConsumo, prCapacidad);
     }
 
-    @Override
     String  abastecer(double prLitros) {
         double freeSpace = this.capacidad - this.cantidad;
 

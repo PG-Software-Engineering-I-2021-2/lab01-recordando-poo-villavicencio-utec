@@ -4,23 +4,24 @@ public class Vehiculo {
     double capacidad;
     double consumo;
     double viaje;
+    static final String defaultValue = &quot;&quot;;
 
-<span class="fc" id="L8">    Vehiculo(double prCantidad, double prConsumo, double prCapacidad){</span>
-<span class="fc" id="L9">        this.cantidad = prCantidad;</span>
-<span class="fc" id="L10">        this.consumo = prConsumo;</span>
-<span class="fc" id="L11">        this.capacidad = prCapacidad;</span>
-<span class="fc" id="L12">    }</span>
+<span class="fc" id="L9">    Vehiculo(double prCantidad, double prConsumo, double prCapacidad){</span>
+<span class="fc" id="L10">        this.cantidad = prCantidad;</span>
+<span class="fc" id="L11">        this.consumo = prConsumo;</span>
+<span class="fc" id="L12">        this.capacidad = prCapacidad;</span>
+<span class="fc" id="L13">    }</span>
     String  abastecer(double prLitros){
-<span class="nc" id="L14">        return &quot;&quot;;</span>
+<span class="nc" id="L15">        return defaultValue;</span>
     }
     String consumoCombustible(double prkm){
-<span class="fc" id="L17">        double fuelRequiere = prkm*this.consumo;</span>
-<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        if(cantidad-fuelRequiere&lt;0){</span>
-<span class="fc" id="L19">            return (&quot;Vehiculo necesita reabastecimiento de combustible&quot;);</span>
+<span class="fc" id="L18">        double fuelRequiere = prkm*this.consumo;</span>
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">        if(cantidad-fuelRequiere&lt;0){</span>
+<span class="fc" id="L20">            return (&quot;Vehiculo necesita reabastecimiento de combustible&quot;);</span>
         }
         else{
-<span class="nc" id="L22">            this.cantidad -=fuelRequiere;</span>
-<span class="nc" id="L23">            return (&quot;Vehiculo viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidad,2)+ &quot; de combustible&quot;);</span>
+<span class="nc" id="L23">            this.cantidad -=fuelRequiere;</span>
+<span class="nc" id="L24">            return (&quot;Vehiculo viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidad,2)+ &quot; de combustible&quot;);</span>
         }
     }
 }

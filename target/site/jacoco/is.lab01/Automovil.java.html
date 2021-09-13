@@ -7,10 +7,10 @@ public class Automovil extends Vehiculo{
 <span class="fc" id="L7">    }</span>
 
     @Override
-    String  abastecer(double prCantidad) {
+    String  abastecer(double prLitros) {
 <span class="nc" id="L11">        double freeSpace = this.capacidad - this.cantidad;</span>
 
-<span class="nc bnc" id="L13" title="All 2 branches missed.">        if (prCantidad &gt; freeSpace)</span>
+<span class="nc bnc" id="L13" title="All 2 branches missed.">        if (prLitros &gt; freeSpace)</span>
         {
 <span class="nc" id="L15">            return &quot;Automovil no se puede reabastecer el tanque, esta lleno&quot;;</span>
 
