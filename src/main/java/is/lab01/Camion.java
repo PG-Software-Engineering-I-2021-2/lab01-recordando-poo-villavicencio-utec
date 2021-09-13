@@ -20,11 +20,10 @@ public class Camion  extends Vehiculo{
         }
     }
     @Override
-    String consumoCombustible(double prkm) {
+    String fuelCantidad(double prkm) {
         DecimalFormat df = new DecimalFormat("0.00");
         double fuelRequiere = prkm*this.consumo;
         if(cantidad-fuelRequiere<0){
-
             return "Camion necesita reabastecimiento de combustible";
         }
         else{

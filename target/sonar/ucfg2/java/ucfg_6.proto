@@ -1,57 +1,70 @@
 
 7is.lab01.Camion#consumoCombustible(D)Ljava/lang/String;‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java ("2"1*×
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java ("3*×
 2‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (D"Ã
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (D"Ã
 ‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (E31
-/Camion necesita reabastecimiento de combustible*Ô
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (E31
+/Camion necesita reabastecimiento de combustible*¹
+3‹
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java- (3ÉÆ
+‹
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (,
+%0java.text.DecimalFormat"java.text.DecimalFormat÷
+ô
+‹
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (4
+%1"3java.text.DecimalFormat#<init>(Ljava/lang/String;)V*
+
+%0java.text.DecimalFormat*
+0.00×
+Ô
+‹
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (5
+dfjava.text.DecimalFormat"__id*
+
+%0java.text.DecimalFormat*
+2
+1*Ø
 1‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (©
-¦
-‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java$ (D
-%0java.lang.String"Pjava.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;*"
-java.lang.String*
-%.2f*
-""*2Õ
-Ò
-‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (E"
-cantidadFormatjava.lang.String"__id*
-
-%0java.lang.StringÏ
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (Ï
 Ì
 ‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (+
-%1java.lang.String"__concat*
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java   (+
+%2java.lang.String"__concat*
 Camion viajÃ³ *
 ""ä
 á
 ‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (>
-%2java.lang.String"__concat*
-
-%1java.lang.String*
- km y aÃºn tiene ó
-ð
-‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (N
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java   (>
 %3java.lang.String"__concat*
 
-%2java.lang.String*$
-"
-cantidadFormatjava.lang.Stringâ
+%2java.lang.String*
+ km y aÃºn tiene ‘Ž
+‹
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java @  (S
+%4java.lang.String"2java.text.NumberFormat#format(D)Ljava/lang/String;*
+
+dfjava.text.DecimalFormat*
+""2	format(D)ç
+ä
+‹
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java   (S
+%5java.lang.String"__concat*
+
+%3java.lang.String*
+
+%4java.lang.Stringâ
 ß
 ‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (a
-%4java.lang.String"__concat*
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java   (f
+%6java.lang.String"__concat*
 
-%3java.lang.String*
+%5java.lang.String*
  de combustible"¨
 ‹
-€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (c
+€/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java   (h
 
-%4java.lang.String:
+%6java.lang.String:
 ""B
 is.lab01.Camion
