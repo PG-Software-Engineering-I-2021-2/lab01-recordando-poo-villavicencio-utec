@@ -24,7 +24,8 @@ public class Camion  extends Vehiculo{
         }
         else{
             this.cantidad -=fuelRequiere;
-            return ("Camion viajó " +(prkm)+" km y aún tiene " +String.format("%.2f",cantidad,2)+ " de combustible");
+            String cantidadFormat = String.format("%.2f",cantidad,2);
+            return ("Camion viajó " +(prkm)+" km y aún tiene " +cantidadFormat+ " de combustible");
         }
     }
 }

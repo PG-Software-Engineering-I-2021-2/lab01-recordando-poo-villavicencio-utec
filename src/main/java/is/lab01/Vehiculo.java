@@ -3,7 +3,6 @@ public class Vehiculo {
     double  cantidad;
     double capacidad;
     double consumo;
-    double viaje;
 
     Vehiculo(double prCantidad, double prConsumo, double prCapacidad){
         this.cantidad = prCantidad;
@@ -18,7 +17,8 @@ public class Vehiculo {
         }
         else{
             this.cantidad -=fuelRequiere;
-            return ("Vehiculo viajó " +(prkm)+" km y aún tiene " +String.format("%.2f",cantidad,2)+ " de combustible");
+            String cantidadFormat = String.format("%.2f",cantidad,2);
+            return ("Vehiculo viajó " +(prkm)+" km y aún tiene " +cantidadFormat+ " de combustible");
         }
     }
 }
