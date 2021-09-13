@@ -24,7 +24,8 @@ public class Camion  extends Vehiculo{
         }
         else{
 <span class="nc" id="L26">            this.cantidad -=fuelRequiere;</span>
-<span class="nc" id="L27">            return (&quot;Camion viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidad,2)+ &quot; de combustible&quot;);</span>
+<span class="nc" id="L27">            String cantidadFormat = String.format(&quot;%.2f&quot;,cantidad,2);</span>
+<span class="nc" id="L28">            return (&quot;Camion viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +cantidadFormat+ &quot; de combustible&quot;);</span>
         }
     }
 }

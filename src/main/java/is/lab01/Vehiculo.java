@@ -1,4 +1,7 @@
 package is.lab01;
+
+import java.text.DecimalFormat;
+
 public class Vehiculo {
     double  cantidad;
     double capacidad;
@@ -11,14 +14,14 @@ public class Vehiculo {
     }
 
     String consumoCombustible(double prkm){
+        DecimalFormat df = new DecimalFormat("0.00");
         double fuelRequiere = prkm*this.consumo;
         if(cantidad-fuelRequiere<0){
             return ("Vehiculo necesita reabastecimiento de combustible");
         }
         else{
             this.cantidad -=fuelRequiere;
-            String cantidadFormat = String.format("%.2f",cantidad,2);
-            return ("Vehiculo viajó " +(prkm)+" km y aún tiene " +cantidadFormat+ " de combustible");
+            return ("Vehiculo viajó " +(prkm)+" km y aún tiene " +df.format(cantidad)+ " de combustible");
         }
     }
 }

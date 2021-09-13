@@ -3,22 +3,22 @@ public class Vehiculo {
     double  cantidad;
     double capacidad;
     double consumo;
-    double viaje;
 
-<span class="fc" id="L8">    Vehiculo(double prCantidad, double prConsumo, double prCapacidad){</span>
-<span class="fc" id="L9">        this.cantidad = prCantidad;</span>
-<span class="fc" id="L10">        this.consumo = prConsumo;</span>
-<span class="fc" id="L11">        this.capacidad = prCapacidad;</span>
-<span class="fc" id="L12">    }</span>
+<span class="fc" id="L7">    Vehiculo(double prCantidad, double prConsumo, double prCapacidad){</span>
+<span class="fc" id="L8">        this.cantidad = prCantidad;</span>
+<span class="fc" id="L9">        this.consumo = prConsumo;</span>
+<span class="fc" id="L10">        this.capacidad = prCapacidad;</span>
+<span class="fc" id="L11">    }</span>
 
     String consumoCombustible(double prkm){
-<span class="fc" id="L15">        double fuelRequiere = prkm*this.consumo;</span>
-<span class="pc bpc" id="L16" title="1 of 2 branches missed.">        if(cantidad-fuelRequiere&lt;0){</span>
-<span class="fc" id="L17">            return (&quot;Vehiculo necesita reabastecimiento de combustible&quot;);</span>
+<span class="fc" id="L14">        double fuelRequiere = prkm*this.consumo;</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        if(cantidad-fuelRequiere&lt;0){</span>
+<span class="fc" id="L16">            return (&quot;Vehiculo necesita reabastecimiento de combustible&quot;);</span>
         }
         else{
-<span class="nc" id="L20">            this.cantidad -=fuelRequiere;</span>
-<span class="nc" id="L21">            return (&quot;Vehiculo viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidad,2)+ &quot; de combustible&quot;);</span>
+<span class="nc" id="L19">            this.cantidad -=fuelRequiere;</span>
+<span class="nc" id="L20">            String cantidadFormat = String.format(&quot;%.2f&quot;,cantidad,2);</span>
+<span class="nc" id="L21">            return (&quot;Vehiculo viajó &quot; +(prkm)+&quot; km y aún tiene &quot; +cantidadFormat+ &quot; de combustible&quot;);</span>
         }
     }
 }

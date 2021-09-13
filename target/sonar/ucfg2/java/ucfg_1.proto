@@ -1,50 +1,56 @@
 
 9is.lab01.Vehiculo#consumoCombustible(D)Ljava/lang/String;ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java ("2"1*›
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java ("2"1*›
 2ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (G"«
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (G"«
 ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (I53
-1Vehiculo necesita reabastecimiento de combustible*Ä
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (I53
+1Vehiculo necesita reabastecimiento de combustible*Ê
 1ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (”
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (´
+®
+ç
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java$ (D
+%0java.lang.String"Pjava.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;*"
+java.lang.String*
+%.2f*
+""*2◊
+‘
+ç
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (E"
+cantidadFormatjava.lang.String"__id*
+
+%0java.lang.String”
 –
 ç
 Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (-
-%0java.lang.String"__concat*
+%1java.lang.String"__concat*
 Vehiculo viaj√≥ *
 ""Ê
 „
 ç
 Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (@
-%1java.lang.String"__concat*
+%2java.lang.String"__concat*
 
-%0java.lang.String*
- km y a√∫n tiene ´
-®
+%1java.lang.String*
+ km y a√∫n tiene ı
+Ú
 ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.javaB (b
-%2java.lang.String"Pjava.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;*"
-java.lang.String*
-%.2f*
-""*2È
-Ê
-ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (b
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (P
 %3java.lang.String"__concat*
 
-%1java.lang.String*
-
-%2java.lang.String‰
+%2java.lang.String*$
+"
+cantidadFormatjava.lang.String‰
 ·
 ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (u
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (c
 %4java.lang.String"__concat*
 
 %3java.lang.String*
  de combustible"™
 ç
-Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (w
+Ç/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Vehiculo.java (e
 
 %4java.lang.String:
 ""B

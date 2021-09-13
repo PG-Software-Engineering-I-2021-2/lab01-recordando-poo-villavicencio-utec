@@ -1,6 +1,9 @@
 package is.lab01;
 
+import java.text.DecimalFormat;
+
 public class Camion  extends Vehiculo{
+
     Camion(double prCantidad, double prConsumo, double prCapacidad) {
         super(prCantidad, prConsumo, prCapacidad);
     }
@@ -18,14 +21,15 @@ public class Camion  extends Vehiculo{
     }
     @Override
     String consumoCombustible(double prkm) {
+        DecimalFormat df = new DecimalFormat("0.00");
         double fuelRequiere = prkm*this.consumo;
         if(cantidad-fuelRequiere<0){
+
             return "Camion necesita reabastecimiento de combustible";
         }
         else{
             this.cantidad -=fuelRequiere;
-            String cantidadFormat = String.format("%.2f",cantidad,2);
-            return ("Camion viajó " +(prkm)+" km y aún tiene " +cantidadFormat+ " de combustible");
+            return ("Camion viajó " +(prkm)+" km y aún tiene " +df.format(cantidad)+ " de combustible");
         }
     }
 }
