@@ -6,25 +6,25 @@ import java.util.logging.Logger;
 <span class="fc" id="L6">    static double consumoVehiculo = 0.9;</span>
 <span class="fc" id="L7">    static double consumoCamion = 1.6;</span>
 <span class="fc" id="L8">    static double capacidadTotal = 100;</span>
+<span class="fc" id="L9">    static double fuelCantidad = 10;</span>
     public static void main(String[ ] args) {
 
-<span class="nc" id="L11">        double fuelCantidad =10;</span>
 
 
 //Ejemplo 1
 <span class="nc" id="L15">        Automovil lAutomovil1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
 
-<span class="nc" id="L17">        String rpta1 = lAutomovil1.consumoCombustible(4);</span>
+<span class="nc" id="L17">        String rpta1 = lAutomovil1.fuelCantidad(4);</span>
 <span class="nc" id="L18">        logger.info(rpta1);</span>
 
 //Ejemplo 2
 <span class="nc" id="L21">        Automovil lAutomovil2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
-<span class="nc" id="L22">        String rpta2 = lAutomovil2.consumoCombustible(12);</span>
+<span class="nc" id="L22">        String rpta2 = lAutomovil2.fuelCantidad(12);</span>
 <span class="nc" id="L23">        logger.info(rpta2);</span>
 
 //Ejemplo 3
 <span class="nc" id="L26">        Camion lCamion = new Camion(fuelCantidad,consumoCamion,capacidadTotal);</span>
-<span class="nc" id="L27">        String rpta3 = lCamion.consumoCombustible(4);</span>
+<span class="nc" id="L27">        String rpta3 = lCamion.fuelCantidad(10);</span>
 <span class="nc" id="L28">        logger.info(rpta3);</span>
 
 <span class="nc" id="L30">    }</span>

@@ -15,10 +15,10 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()I®
-is.lab01.Vehiculojava.lang.ObjectR
-consumoCombustible(D)9is.lab01.Vehiculo#consumoCombustible(D)Ljava/lang/String;-
-<init>(DDD)is.lab01.Vehiculo#<init>(DDD)V(
+hashCode()java.lang.Object#hashCode()Iú
+is.lab01.Vehiculojava.lang.Object-
+<init>(DDD)is.lab01.Vehiculo#<init>(DDD)VF
+fuelCantidad(D)3is.lab01.Vehiculo#fuelCantidad(D)Ljava/lang/String;(
 java.io.Serializablejava.lang.Object'
 java.lang.Cloneablejava.lang.Objectï
 java.text.Formatjava.lang.Cloneablejava.lang.Objectjava.io.Serializable”
@@ -168,10 +168,10 @@ JhandleInfinity(DLjava/lang/StringBuffer;Ljava/text/Format$FieldDelegate;Z)cjav
 isDecimalSeparatorAlwaysShown()8java.text.DecimalFormat#isDecimalSeparatorAlwaysShown()Zö
 is.lab01.Automovilis.lab01.Vehiculo.
 <init>(DDD)is.lab01.Automovil#<init>(DDD)VA
-abastecer(D)1is.lab01.Automovil#abastecer(D)Ljava/lang/String;„
-is.lab01.Camionis.lab01.VehiculoP
-consumoCombustible(D)7is.lab01.Camion#consumoCombustible(D)Ljava/lang/String;+
-<init>(DDD)is.lab01.Camion#<init>(DDD)V>
+abastecer(D)1is.lab01.Automovil#abastecer(D)Ljava/lang/String;◊
+is.lab01.Camionis.lab01.Vehiculo+
+<init>(DDD)is.lab01.Camion#<init>(DDD)VD
+fuelCantidad(D)1is.lab01.Camion#fuelCantidad(D)Ljava/lang/String;>
 abastecer(D).is.lab01.Camion#abastecer(D)Ljava/lang/String;ê
 is.lab01.Labo1java.lang.Object$
 <init>()is.lab01.Labo1#<init>()VF
