@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 83, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.628 sec
+Tests run: 85, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.593 sec <<< FAILURE!
+Test01_fuelCantidad_OK(is.lab01.CamionTest)  Time elapsed: 0.076 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Camion viajo 4.0 km y a?n tiene 3.60 de combustible] but found [Camion viajo 4.0 km y a??n tiene 3.60 de combustible]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at is.lab01.CamionTest.Test01_fuelCantidad_OK(CamionTest.java:13)
+

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">83 methods,   83 passed</span>
+                    <span class="method-stats">85 methods, 1 failed,   84 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="is.lab01.CamionTest" class="method navigator-link" hash-for-method="Test01_fuelCantidad_OK">Test01_fuelCantidad_OK</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,7 +128,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="is.lab01.CamionTest" class="method navigator-link" hash-for-method="Test01_fuelCantidad_OK">Test01_fuelCantidad_OK</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="is.lab01.EjemploVehiculoTest" class="method navigator-link" hash-for-method="Test02">Test02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -515,6 +529,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="is.lab01.CamionTest" class="method navigator-link" hash-for-method="Test02_Stress">Test02_Stress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="is.lab01.EjemploVehiculoTest" class="method navigator-link" hash-for-method="Test03">Test03</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -529,6 +548,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">is.lab01.CamionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test01_fuelCantidad_OK">
+                  </a> <!-- Test01_fuelCantidad_OK -->
+                  <span class="method-name">Test01_fuelCantidad_OK</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Camion viajo 4.0 km y aún tiene 3.60 de combustible] but found [Camion viajo 4.0 km y a��n tiene 3.60 de combustible]
+	at is.lab01.CamionTest.Test01_fuelCantidad_OK(CamionTest.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -540,13 +579,6 @@
                   <a name="Test01_fuelCantidad_Fail">
                   </a> <!-- Test01_fuelCantidad_Fail -->
                   <span class="method-name">Test01_fuelCantidad_Fail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test01_fuelCantidad_OK">
-                  </a> <!-- Test01_fuelCantidad_OK -->
-                  <span class="method-name">Test01_fuelCantidad_OK</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -1124,6 +1156,20 @@
                   <span class="method-name">Test01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test02">
+                  </a> <!-- Test02 -->
+                  <span class="method-name">Test02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test03">
+                  </a> <!-- Test03 -->
+                  <span class="method-name">Test03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
@@ -1178,23 +1224,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(83);
+data.addRows(85);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Test01')
 data.setCell(0, 2, 'is.lab01.EjemploVehiculoTest')
-data.setCell(0, 3, 58);
+data.setCell(0, 3, 61);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Test01_fuelCantidad_OK')
 data.setCell(1, 2, 'is.lab01.CamionTest')
-data.setCell(1, 3, 23);
+data.setCell(1, 3, 61);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Test01_fuelCantidad_Fail')
-data.setCell(2, 2, 'is.lab01.CamionTest')
-data.setCell(2, 3, 3);
+data.setCell(2, 1, 'Test02')
+data.setCell(2, 2, 'is.lab01.EjemploVehiculoTest')
+data.setCell(2, 3, 20);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Test02_Stress')
+data.setCell(3, 1, 'Test01_fuelCantidad_Fail')
 data.setCell(3, 2, 'is.lab01.CamionTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Test02_Stress')
 data.setCell(4, 2, 'is.lab01.CamionTest')
@@ -1338,7 +1384,7 @@ data.setCell(38, 3, 1);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'Test02_Stress')
 data.setCell(39, 2, 'is.lab01.CamionTest')
-data.setCell(39, 3, 1);
+data.setCell(39, 3, 0);
 data.setCell(40, 0, 40)
 data.setCell(40, 1, 'Test02_Stress')
 data.setCell(40, 2, 'is.lab01.CamionTest')
@@ -1500,8 +1546,8 @@ data.setCell(79, 1, 'Test02_Stress')
 data.setCell(79, 2, 'is.lab01.CamionTest')
 data.setCell(79, 3, 0);
 data.setCell(80, 0, 80)
-data.setCell(80, 1, 'Test02_Stress')
-data.setCell(80, 2, 'is.lab01.CamionTest')
+data.setCell(80, 1, 'Test03')
+data.setCell(80, 2, 'is.lab01.EjemploVehiculoTest')
 data.setCell(80, 3, 0);
 data.setCell(81, 0, 81)
 data.setCell(81, 1, 'Test02_Stress')
@@ -1511,11 +1557,19 @@ data.setCell(82, 0, 82)
 data.setCell(82, 1, 'Test02_Stress')
 data.setCell(82, 2, 'is.lab01.CamionTest')
 data.setCell(82, 3, 0);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'Test02_Stress')
+data.setCell(83, 2, 'is.lab01.CamionTest')
+data.setCell(83, 3, 0);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'Test02_Stress')
+data.setCell(84, 2, 'is.lab01.CamionTest')
+data.setCell(84, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 121 ms</span>
+              <span class="suite-total-time">Total running time: 180 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -1546,336 +1600,346 @@ return data;
                 <span class="method-name">Test01</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test02</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test03</span>
+                <span class="method-start">98 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">is.lab01.CamionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Test01_fuelCantidad_Fail</span>
-                <span class="method-start">70 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Test01_fuelCantidad_OK</span>
-                <span class="method-start">74 ms</span>
+                <span class="method-start">110 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">117 ms</span>
+                <span class="method-start">215 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">117 ms</span>
+                <span class="method-start">215 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">117 ms</span>
+                <span class="method-start">217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">120 ms</span>
+                <span class="method-start">217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">120 ms</span>
+                <span class="method-start">220 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">122 ms</span>
+                <span class="method-start">222 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">122 ms</span>
+                <span class="method-start">222 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">124 ms</span>
+                <span class="method-start">224 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">124 ms</span>
+                <span class="method-start">224 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">126 ms</span>
+                <span class="method-start">226 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">126 ms</span>
+                <span class="method-start">228 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">127 ms</span>
+                <span class="method-start">231 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">128 ms</span>
+                <span class="method-start">234 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">129 ms</span>
+                <span class="method-start">237 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">129 ms</span>
+                <span class="method-start">238 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">130 ms</span>
+                <span class="method-start">241 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">130 ms</span>
+                <span class="method-start">243 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">246 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">132 ms</span>
+                <span class="method-start">247 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">132 ms</span>
+                <span class="method-start">251 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">134 ms</span>
+                <span class="method-start">256 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">135 ms</span>
+                <span class="method-start">258 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">136 ms</span>
+                <span class="method-start">258 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">138 ms</span>
+                <span class="method-start">270 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">139 ms</span>
+                <span class="method-start">272 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">139 ms</span>
+                <span class="method-start">275 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">141 ms</span>
+                <span class="method-start">277 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">144 ms</span>
+                <span class="method-start">280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">147 ms</span>
+                <span class="method-start">284 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">149 ms</span>
+                <span class="method-start">289 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">151 ms</span>
+                <span class="method-start">290 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">153 ms</span>
+                <span class="method-start">292 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">155 ms</span>
+                <span class="method-start">293 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">156 ms</span>
+                <span class="method-start">298 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">158 ms</span>
+                <span class="method-start">302 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">158 ms</span>
+                <span class="method-start">303 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">160 ms</span>
+                <span class="method-start">304 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">160 ms</span>
+                <span class="method-start">306 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">161 ms</span>
+                <span class="method-start">308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">163 ms</span>
+                <span class="method-start">309 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">163 ms</span>
+                <span class="method-start">311 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">166 ms</span>
+                <span class="method-start">313 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">166 ms</span>
+                <span class="method-start">315 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">168 ms</span>
+                <span class="method-start">317 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">168 ms</span>
+                <span class="method-start">320 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">169 ms</span>
+                <span class="method-start">320 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">169 ms</span>
+                <span class="method-start">323 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">171 ms</span>
+                <span class="method-start">326 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">171 ms</span>
+                <span class="method-start">327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">172 ms</span>
+                <span class="method-start">328 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">172 ms</span>
+                <span class="method-start">328 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">176 ms</span>
+                <span class="method-start">334 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">178 ms</span>
+                <span class="method-start">334 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">179 ms</span>
+                <span class="method-start">338 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">181 ms</span>
+                <span class="method-start">338 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">183 ms</span>
+                <span class="method-start">340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">184 ms</span>
+                <span class="method-start">342 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">184 ms</span>
+                <span class="method-start">345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">185 ms</span>
+                <span class="method-start">346 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">186 ms</span>
+                <span class="method-start">346 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">188 ms</span>
+                <span class="method-start">347 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">189 ms</span>
+                <span class="method-start">348 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">191 ms</span>
+                <span class="method-start">348 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">192 ms</span>
+                <span class="method-start">350 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">192 ms</span>
+                <span class="method-start">351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">194 ms</span>
+                <span class="method-start">351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">194 ms</span>
+                <span class="method-start">352 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">195 ms</span>
+                <span class="method-start">353 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">196 ms</span>
+                <span class="method-start">355 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">196 ms</span>
+                <span class="method-start">356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">199 ms</span>
+                <span class="method-start">357 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">199 ms</span>
+                <span class="method-start">358 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">200 ms</span>
+                <span class="method-start">359 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">201 ms</span>
+                <span class="method-start">360 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">202 ms</span>
+                <span class="method-start">361 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">203 ms</span>
+                <span class="method-start">362 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">203 ms</span>
+                <span class="method-start">362 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">205 ms</span>
+                <span class="method-start">363 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">210 ms</span>
+                <span class="method-start">363 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test02_Stress</span>
-                <span class="method-start">221 ms</span>
+                <span class="method-start">363 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

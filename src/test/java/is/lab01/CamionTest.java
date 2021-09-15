@@ -10,7 +10,7 @@ public class CamionTest {
     @Test
     public void Test01_fuelCantidad_OK(){
         Camion camionTest = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
-        Assert.assertEquals(camionTest.fuelCantidad(4),"Camion viajo 4.0 km y aún tiene 3.60 de combustible" );
+        Assert.assertEquals(camionTest.fuelCantidad(4),"Camion viajo 4.0 km y aun tiene 3.60 de combustible" );
     }
     @Test
     public void Test01_fuelCantidad_Fail(){

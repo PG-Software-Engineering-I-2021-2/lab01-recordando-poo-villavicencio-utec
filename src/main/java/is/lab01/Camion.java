@@ -28,7 +28,7 @@ public class Camion  extends Vehiculo{
         }
         else{
             this.cantidad -=fuelRequiere;
-            return ("Camion viajo " +(prkm)+" km y aún tiene " +df.format(cantidad)+ " de combustible");
+            return ("Camion viajo " +(prkm)+" km y aun tiene " +df.format(cantidad)+ " de combustible");
         }
     }
 }
