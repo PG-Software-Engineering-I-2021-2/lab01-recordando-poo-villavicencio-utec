@@ -21,7 +21,7 @@ public class Vehiculo {
         }
         else{
             this.cantidad -=fuelRequiere;
-            return ("Vehiculo viajó " +(prkm)+" km y aún tiene " +df.format(cantidad)+ " de combustible");
+            return ("Vehiculo viajo " +(prkm)+" km y aun tiene " +df.format(cantidad)+ " de combustible");
         }
     }
 }

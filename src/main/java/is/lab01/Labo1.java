@@ -24,8 +24,9 @@ public class Labo1 {
 
 //Ejemplo 3
         Camion lCamion = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
-        String rpta3 = lCamion.abastecer(100);
+        String rpta3 = lCamion.fuelCantidad(4);
         logger.info(rpta3);
+
 
 
     }

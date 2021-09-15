@@ -23,5 +23,18 @@ public class EjemploVehiculoTest {
         Assert.assertEquals(automovilTest.abastecer(100),"Automovil no se puede reabastecer el tanque, esta lleno" );
     }
 
+    @Test
+    public void Test04(){
+        Vehiculo vehiculoTest = new Vehiculo(fuelCantidad,consumoVehiculo,capacidadTotal);
+        Assert.assertEquals(vehiculoTest.fuelCantidad(100),"Vehiculo necesita reabastecimiento de combustible" );
+    }
+    @Test
+    public void Test05(){
+        Vehiculo vehiculoTest = new Vehiculo(fuelCantidad,consumoVehiculo,capacidadTotal);
+        Assert.assertEquals(vehiculoTest.fuelCantidad(10),"Vehiculo viajo 10.0 km y aun tiene 1.00 de combustible" );
+    }
+
+
+
 
 }
