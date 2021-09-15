@@ -25,7 +25,7 @@
 
 %0java.text.DecimalFormat*
 2
-1*◊
+1*÷
 1ã
 Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (Œ
 À
@@ -33,14 +33,14 @@
 Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (+
 %2java.lang.String"__concat*
 Camion viajo *
-""‰
-·
+""„
+‡
 ã
 Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java (>
 %3java.lang.String"__concat*
 
-%2java.lang.String*
- km y a√∫n tiene ëé
+%2java.lang.String*
+ km y aun tiene ëé
 ã
 Ä/Users/villavant/Documents/Master Computer Science/IS/lab01-recordando-poo-villavicencio-utec/src/main/java/is/lab01/Camion.java@ (S
 %4java.lang.String"2java.text.NumberFormat#format(D)Ljava/lang/String;*

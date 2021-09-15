@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="85" failures="1" name="TestSuite" time="0.2" errors="0" skipped="0">
+<testsuite tests="85" failures="0" name="TestSuite" time="0.146" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+0"/>
@@ -57,53 +57,18 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="is.lab01.EjemploVehiculoTest" name="Test01" time="0.069"/>
-  <testcase classname="is.lab01.EjemploVehiculoTest" name="Test02" time="0.011"/>
-  <testcase classname="is.lab01.EjemploVehiculoTest" name="Test03" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test01_fuelCantidad_Fail" time="0.003"/>
-  <testcase classname="is.lab01.CamionTest" name="Test01_fuelCantidad_OK" time="0.076">
-    <failure message="expected [Camion viajo 4.0 km y aún tiene 3.60 de combustible] but found [Camion viajo 4.0 km y a��n tiene 3.60 de combustible]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Camion viajo 4.0 km y aún tiene 3.60 de combustible] but found [Camion viajo 4.0 km y a��n tiene 3.60 de combustible]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at is.lab01.CamionTest.Test01_fuelCantidad_OK(CamionTest.java:13)
-</failure>
-  </testcase>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.EjemploVehiculoTest" name="Test01" time="0.054"/>
+  <testcase classname="is.lab01.EjemploVehiculoTest" name="Test02" time="0.014"/>
+  <testcase classname="is.lab01.EjemploVehiculoTest" name="Test03" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test01_fuelCantidad_Fail" time="0.002"/>
+  <testcase classname="is.lab01.CamionTest" name="Test01_fuelCantidad_OK" time="0.037"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.002"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
@@ -114,6 +79,55 @@
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.003"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.008"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
+  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
@@ -123,33 +137,9 @@
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
   <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0"/>
-  <testcase classname="is.lab01.CamionTest" name="Test02_Stress" time="0.001"/>
 </testsuite>

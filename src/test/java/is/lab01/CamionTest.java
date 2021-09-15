@@ -18,6 +18,19 @@ public class CamionTest {
         Assert.assertEquals(camionTest.fuelCantidad(10),"Camion necesita reabastecimiento de combustible" );
     }
 
+
+    @Test
+    public void Test01_abastecer_OK(){
+        Camion camionTest = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
+        Assert.assertEquals(camionTest.abastecer(10),"La cantidad de combustible del camion es: 19.5" );
+    }
+    @Test
+    public void Test01_abastecer_Fail(){
+        Camion camionTest = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
+        Assert.assertEquals(camionTest.abastecer(100),"Camion no se puede reabastecer el tanque, esta lleno" );
+    }
+
+
     //Test de Stress
     @Test(invocationCount = 80,threadPoolSize = 80)
     public void Test02_Stress(){
